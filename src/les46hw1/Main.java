@@ -43,5 +43,12 @@ public class Main {
     for (Book b : books) {
       System.out.println(b);
     }
+
+    System.out.println("\nBook list sorted by Pages 9-1, than Title 9- 1");
+
+    books.sort(new BookPageTitleDeclComparator());
+    for (Book b : books) {
+      System.out.println(b);
+    }
   }
 }
